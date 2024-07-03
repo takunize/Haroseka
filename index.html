@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to My Chat Web</h1>
+    <div id="sidebar">
+        <h2>Members</h2>
+        <ul id="user-list"></ul>
+    </div>
+    <div id="chat-container" style="display: none;">
+        <div id="profile-banner">
+            <img src="url_de_la_imagen" alt="Profile Picture" id="profile-img">
+            <h2 id="username">Nombre de Usuario</h2>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="message-input-container">
+            <input type="text" id="message-input" placeholder="Escribe un mensaje...">
+            <button id="send-button">Enviar</button>
+        </div>
+        <button id="settings-button">Ajustes</button>
+    </div>
+    <div id="registration-form">
+        <input type="text" id="name-input" placeholder="Nombre">
+        <input type="email" id="email-input" placeholder="Correo Electrónico">
+        <button id="join-button">Unirse al Chat</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
